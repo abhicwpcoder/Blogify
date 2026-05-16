@@ -1,5 +1,5 @@
 
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = process.env.VITE_API_BASE || 'http://localhost:5000/api';
 
 export interface Blog {
   id: string;

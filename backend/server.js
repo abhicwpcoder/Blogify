@@ -14,7 +14,7 @@ const supabase = createClient(
 );
 
 app.use(cors({ 
-  origin: 'https://blogify-murex-iota.vercel.app/'
+  origin: process.env.CORS_ORIGIN || 'http://localhost:3000'
 }));
 app.use(express.json());
 

@@ -1,4 +1,5 @@
-const API_BASE = 'https://blogify-8qq2.onrender.com';
+
+const API_BASE = 'http://localhost:5000/api';
 
 export interface Blog {
   id: string;

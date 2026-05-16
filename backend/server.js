@@ -13,7 +13,9 @@ const supabase = createClient(
   process.env.SUPABASE_ANON_KEY
 );
 
-app.use(cors({ origin: 'https://blogify-2o4d.vercel.app/' }));
+app.use(cors({ 
+  origin: process.env.CORS_ORIGIN || ['http://localhost:3000', 'http://localhost:5173', 'https://blogify-2o4d.vercel.app']
+}));
 app.use(express.json());
 
 // Default blogs for seeding

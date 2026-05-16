@@ -266,7 +266,7 @@ app.post('/api/contact', async (req, res) => {
         Authorization: `Bearer ${resendApiKey}`,
       },
       body: JSON.stringify({
-        from: 'contact@blogify.com',
+        from: 'onboarding@resend.dev',
         to: 'abhijeetdepale9@gmail.com',
         subject: `New Contact Form Submission from ${name}`,
         html: `

@@ -1,5 +1,5 @@
 
-const API_BASE = 'https://blogify-8qq2.onrender.com';
+const API_BASE = 'https://blogify-8qq2.onrender.com/api';
 
 export interface Blog {
   id: string;
